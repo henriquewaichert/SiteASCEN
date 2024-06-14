@@ -1,0 +1,154 @@
+/* 
+Preto: #000000
+Azul-petróleo: #1693A5
+Bege-claro: #D8D8C0
+Bege-pálido: #F0F0D8
+Branco: #FFFFFF 
+*/
+
+html{
+    background-color: #D8D8C0;
+    overflow-x: hidden; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cabecalho {
+    background-color: black;
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;;
+}
+
+.cabecalho_logo{
+    padding-left: 5%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.h1_logo{
+    display: flex;
+    position: absolute;
+    left: 11.5%;
+    top: 3%;
+}
+
+.h2_logo{
+    display: flex;
+    position: absolute;
+    left: 11.5%;
+    top: 7%;
+}
+
+.cabecalho_inicio{
+    display: flex;
+    position: absolute;
+    left: 34%;
+    top: 5.5%;
+}
+
+.a_inicio{
+    font-size: 20px;
+}
+
+.a_inicio:hover{
+    color: silver;
+    font-size: 22px;   
+}
+
+.a_prazer:hover{
+    font-size: 22px;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    
+}
+
+.menu_item {
+    position: absolute;
+    left: 45%;
+    top: 3%;
+    font-size: 20px;
+    
+}
+
+.menu_item a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.menu_item:hover .submenu {
+    display: block;
+    color: silver;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: black ; 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    top: 100%;
+    left: 0;
+    min-width: 200px; 
+}
+
+.submenu li a {
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+    transition: all 0.5s ease-in-out;
+}
+
+.submenu li a:hover {
+    background-color: silver;
+    font-size: 17px; 
+}
+
+.cabecalho_servicos{
+    display: flex;
+    position: absolute;
+    left: 65%;
+    top: 5.5%;
+}
+
+.a_servicos{
+    font-size: 20px;
+}
+
+.a_servicos:hover{
+    color: silver;
+    font-size: 22px;
+}
+
+.cabecalho_contato{
+    display: flex;
+    position: absolute;
+    left: 80%;
+    top: 5.5%;
+}
+
+.a_contato{
+    font-size: 20px;
+}
+
+.a_contato:hover{
+    color: silver;
+    font-size: 22px;
+}
