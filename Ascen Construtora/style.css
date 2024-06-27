@@ -19,6 +19,15 @@ html{
     box-sizing: border-box;
 }
 
+
+.main_prazer{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 .cabecalho {
     position: fixed;
     width: 100%;
@@ -68,63 +77,17 @@ a {
     font-size: 22px;   
 }
 
-.a_prazer:hover{
-
-    font-size: 22px;
-}
-
-.menu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    
-}
-
-.menu_item {
+.a_prazer{
     position: absolute;
-    left: 45%;
-    bottom: 22%;
+    left: 47%;
+    bottom: 40%;
     font-size: 20px;
 }
 
-.menu_item a {
-    display: block;
-    padding: 15px 20px;
-    color: white;
-    text-decoration: none;
+.a_prazer:hover{
+    font-size: 22px;
 }
 
-.menu_item:hover .submenu {
-    display: block;
-    color: silver;
-}
-
-.submenu {
-    display: none;
-    position: absolute;
-    background-color: black ; 
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    top: 100%;
-    left: 0;
-    min-width: 200px; 
-}
-
-.submenu li a {
-    padding: 10px 20px;
-    color: white;
-    text-decoration: none;
-    display: block;
-    font-size: 15px;
-    transition: all 0.5s ease-in-out;
-}
-
-.submenu li a:hover {
-    background-color: silver;
-    font-size: 17px; 
-}
 
 .cabecalho_servicos{
     display: flex;
@@ -160,108 +123,123 @@ a {
 
 /* QUEM SOMOS */
 
-.h2_quemsomos{
-    position: relative;
-    padding-top: 2%;
-    left: 44%;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 35px;
-    margin-top: 20px;
+.main_prazer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 50px; 
+    font-size: 25px;
 }
 
-.sobre_1{
-    position: relative;
-    padding-left: 13%;
-    padding-right: 13%;
-    padding-top: 4%;
-    padding-bottom: 3%;
-    font-size: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.container_quemsomos {
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 5%;
 }
 
+.h2_quemsomos,
+.sobre_1,
 .sobre_2{
-    position: relative;
-    padding-left: 13%;
-    padding-right: 13%;
-    padding-bottom: 7%;
-    font-size: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 1%;
 }
 
- .img_sobre{
-    margin-top: 6%;
+.img_sobre {
+    max-width: 100%; 
+    height: auto; 
 }
+
+.container_trio {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1200px; 
+    margin-bottom: 30px;
+}
+
+.container_missao,
+.container_visao,
+.container_valores {
+    width: 30%;
+    padding: 20px;
+    margin: 10px;
+    text-align: center; 
+}
+
+.ul_valores{
+    list-style-type: none;
+}
+
+li{
+    padding: 1.5%;
+}
+
 
 /* FOOTER */
 
 .rodape {
     background-color: black;
     color: white;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    padding-top: 2%;
-    padding-bottom: 2.5%;
-    height: 250px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center; 
+    position: relative;
 }
 
-.h3_atendimento{
+.h3_atendimento, .h3_midia{
     font-weight: 100;
-    padding: 1%;
-    position: relative;
-    left: 10%;
     color: #1693A5;
 }
 
-.atendimento_footer{
-    position: relative;
-    left: 11%;
-    bottom: 7px;
-}
-
-.email_footer{
-    position: relative;
-    left: 11%;
-}
-
-.endereco_footer{
-    position: relative;
-    left: 11%;
-    top: 7px;
-}
-
-.img_footer{
-    display: flex;
-    position: relative;
-    left: 45%;
-    bottom: 125px;
-}
-
-.h3_midia{
-    position: relative;
-    left: 70%;
-    bottom: 245px;
-    color: #1693A5;
-    font-weight: 100;
-}
-
-.p_midia{
-    position: relative;
-    left: 70%;
-    bottom: 250px;
-    padding-top: 30px ;
-}
-
-.insta_footer{
+.atendimento_footer {
     position: absolute;
-    left: 70%;
-    top: 201%;
+    left: 7%; 
+    top: 20%; 
+    text-align: left;
+    font-size: 18px;
+}
+
+.p_atendimento1{
+    text-align: left;
+    font-size: 17px;
+    padding: 1.1%;
+}
+
+.img_footer {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.h3_midia {
+    position: absolute;
+    right: 7%; 
+    top: 20%; 
+}
+
+.p_midia {
+    position: absolute;
+    right: 6%;
+    top: 40%; 
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.insta_footer {
+    display: inline-block;
+}
+
+.copy-container {
+    position: relative;
+    bottom: 1px;
+    width: 100%; 
+    text-align: center;
 }
 
 .copyright{
-    position: absolute;
-    top: 214%;
-    left: 20%;
+    padding-top: 2%;
 }
-
 
 .slider{
     z-index: 1;
@@ -270,7 +248,7 @@ a {
     height: 400px;
     overflow: hidden;
     position: relative;
-    top: 85px;
+    top: 110px;
 }
 
 .slides{
