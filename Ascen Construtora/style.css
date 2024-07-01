@@ -173,6 +173,90 @@ li{
     padding: 1.5%;
 }
 
+/* CONTATO */
+
+.main_contato {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 10%; 
+    font-size: 25px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.form_contato{
+    margin-right: 10%;
+}
+
+.titulo_form{
+    font-size: large;
+}
+
+.espaco_form{
+    margin-top: 2%;
+    width: 140%;
+    height: 60px;
+    border: solid gray;
+    border-radius: 7px;
+    padding: 5%;
+    font-size: large;
+    background-color: #f8f8ffe3;
+}
+
+.botao_form{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 40%;
+    height: 40px;
+    margin-top: 5%;
+    padding: 1%;
+    border-radius: 20px;
+    transition: ease-in 0.5s;
+    background-color: #f8f8ffe3;
+    border-color: gray;
+}
+
+.botao_form:hover{
+    background-color: lightgrey;
+    font-size: 14px;
+    transition: ease-in 0.5s;
+}
+
+.container_contato{
+    width: 50%;
+}
+
+.h2_contato,
+.h4_contato,
+.h5_email{
+    color: rgba(0, 0, 0, 0.775);
+}
+
+.p_contato{
+    font-size: 20px;
+}
+
+.h5_email{
+    padding-bottom: 4%;
+    margin-left: -102%;
+}
+
+.p_email{
+    font-size: 17px;
+    margin-left: -102%;
+}
+
+.a_email{
+    color: rgb(77, 75, 75);
+}
+
+#id_email{
+    padding-top: 2%;
+}
+
+.google_maps{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
 
 /* FOOTER */
 
