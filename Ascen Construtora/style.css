@@ -330,6 +330,8 @@ li{
     padding-top: 2%;
 }
 
+/* INICIO CARROSEL */
+
 .slider{
     z-index: 1;
     margin: 0 auto; 
@@ -422,4 +424,223 @@ li{
 }
 #radio3:checked ~ .navigation-auto .auto-btn3{
     background-color:#fff
+}
+
+
+/*SITES RESPONSIVEIS*/
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+
+/* CABEÇALHO RESPONSIVEL 1.0 */
+
+.cabecalho_logo{
+    padding-left: 2%;
+    width: 130%;
+}
+
+.h1_logo{
+    display: flex;
+    position: absolute;
+    left: 11.5%;
+    bottom: 45%;
+    font-size: 15px;
+}
+
+.h2_logo{
+    display: flex;
+    position: absolute;
+    left: 11.5%;
+    top: 50%;
+    font-size: 14.5px;
+}
+
+.cabecalho_inicio{
+    display: flex;
+    position: absolute;
+    left: 37%;
+    bottom: 30%;
+}
+    
+.a_inicio{
+    font-size: 13px;
+}
+
+.a_inicio:hover{
+    color: silver;
+    font-size: 14px;   
+}
+
+.a_prazer{
+    position: absolute;
+    left: 47%;
+    bottom: 31.5%;
+    font-size: 13px;
+}
+
+.a_prazer:hover{
+    font-size: 14px;
+}
+
+.cabecalho_servicos{
+    display: flex;
+    position: absolute;
+    left: 68%;
+    bottom: 31.5%;
+}
+
+.a_servicos{
+    font-size: 13px;
+}
+
+.a_servicos:hover{
+    color: silver;
+    font-size: 14px;
+}
+
+.cabecalho_contato{
+    display: flex;
+    position: absolute;
+    left: 82%;
+    bottom: 33.5%;
+}
+
+.a_contato{
+    font-size: 13px;
+}
+
+.a_contato:hover{
+    color: silver;
+    font-size: 14px;
+}
+
+/* QUEM SOMOS RESPONSIVEL 1.0*/
+
+html{
+    background-color: #D8D8C0;
+    overflow-x: hidden;
+}
+
+.main_prazer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 40px; 
+    font-size: 16px;
+}
+
+.container_quemsomos {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 5%;
+}
+
+.h2_quemsomos{
+    font-size: 20px;
+    text-align: center;
+}
+
+.h2_quemsomos,
+.sobre_1,
+.sobre_2{
+    padding-left: 1%;
+}
+
+.sobre_1{
+    padding-bottom: 3%;
+}
+
+.img_sobre {
+    max-width: 100%; 
+    height: auto; 
+}
+
+.container_trio {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.container_missao,
+.container_visao,
+.container_valores {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.h2_missao,
+.h2_visao,
+.h2_valores{
+    text-align: center;
+}
+
+
+.ul_valores{
+    list-style-type: circle;
+    margin-left: 5%;
+}
+
+li{
+    padding: 1.5%;
+}
+
+/* RODAPÉ RESPONSIVEL 1.0 */
+
+.h3_atendimento, .h3_midia{
+    font-weight: 100;
+    color: #1693A5;
+}
+
+.atendimento_footer {
+    position: absolute;
+    left: 3%; 
+    top: 15%; 
+    text-align: left;
+    font-size: 13px;
+}
+
+.p_atendimento1{
+    text-align: left;
+    font-size: 12px;
+    padding: 1.1%;
+}
+
+.img_footer {
+    display: inline-block;
+    width: 15%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.h3_midia {
+    position: absolute;
+    right: 4%; 
+    top: 15%; 
+    font-size: 15px;
+}
+
+.p_midia {
+    position: absolute;
+    right: 3%;
+    top: 33%; 
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 13px;
+}
+
+.insta_footer {
+    display: inline-block;
+}
+
+.copy-container {
+    position: relative;
+    top: 20px;
+    width: 100%; 
+    text-align: center;
+    font-size: 10px;
+}
+
+.copyright{
+    padding-top: 5%;
+}
 }
