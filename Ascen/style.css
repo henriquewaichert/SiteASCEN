@@ -1142,20 +1142,135 @@ h4{
     margin: 2%;
 }
 
-
-.container_servicoimg {
-    display: flex;
-    justify-content: space-around;
+/* SERVIÇO 3.0 */
 }
 
-.container_servicoimg:hover {
-    filter: brightness(50%);
+.main_servico {
+    position: relative;
+    padding-left: 5%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
+.container_servico {
+    padding-top: 10%;
+}
+
+.h2_servicos {
+    font-size: 30px;
+    padding-bottom: 2%;
+}
+
+.servico_1 {
+    font-size: 21px;
+    padding-bottom: 1.5%;
+}
+
+.img_servico_link , .img_servico_link2{
+    position: relative;
+}
+
 .img_servico {
-    
     max-width: 100%;
     height: auto;
-    margin-bottom: 10px; /* Ajuste o espaçamento conforme necessário */
+    margin-bottom: 0px;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    z-index: 1;
 }
 
+.img_servico_link::before {
+    content: 'Abrir Fotos';
+    position: absolute;
+    bottom: 700%;
+    left: 52.5%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 16px;
+    background-color: rgba(48, 56, 57, 0.9);
+    padding: 10px 20px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.img_servico_link:hover::before {
+    opacity: 1;
+}
+
+.img_servico:hover {
+    opacity: 0.6;
+    transform: scale(1.005);
+}
+
+.img_servico_link2::before{
+    content: 'Abrir Fotos';
+    position: absolute;
+    bottom: 1000%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 16px;
+    background-color: rgba(48, 56, 57, 0.9);
+    padding: 10px 20px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.img_servico_link2:hover::before {
+    opacity: 1;
+}
+
+.img_servico_link_voltar::before {
+    content: 'Voltar'; /* Mensagem a ser exibida */
+    position: absolute;
+    top: 35%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 16px;
+    background-color: rgba(48, 56, 57, 0.9);
+    padding: 10px 20px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out; 
+    z-index: 2; 
+    pointer-events: none; /* Para evitar que o texto interfira no hover */
+}
+
+.img_servico_link_voltar:hover::before {
+    opacity: 1;
+}
+
+.container_servicoimg{
+    margin-bottom: 5%;
+}
+
+.img_servico_link_voltar2::before{
+    content: 'Voltar'; /* Mensagem a ser exibida */
+    position: relative;
+    bottom: 210px;
+    left: 24%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 16px;
+    background-color: rgba(48, 56, 57, 0.9);
+    padding: 10px 20px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out; 
+    z-index: 2; 
+    pointer-events: none; /* Para evitar que o texto interfira no hover */
+}
+
+.img_servico_link_voltar2:hover::before {
+    opacity: 1;
+}
+
+.img_servico2{
+    position: relative;
+    margin-left: 6%;
 }
